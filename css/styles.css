@@ -777,7 +777,42 @@ video{
     }
 }
 
+@media (max-width:775px){
+    /* HOME */
+    .second__section{
+        width: 65%;
+        padding-left: 185px;
+        align-items: center;
+    }
+
+    .publication{
+        width: 380px;
+        justify-content: center;
+    }
+    .publication2{
+        width: 400px;
+        height: 500px;
+    }
+}
+
 @media (max-width:641px){
+    .second__section{
+        width: 35%;
+        padding-left: 65px;
+        align-items: center;
+    }
+
+    .second__section--article1{
+        height: 250px;
+    }
+
+    .publication{
+        width: 180px;
+        justify-content: center;
+    }
+    .publication2{
+        width: 200px;
+    }
     .third__section{
         display: grid;
         flex-direction: column;
