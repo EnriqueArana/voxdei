@@ -172,7 +172,7 @@ body{
     padding-left: 100px;
 }
 
-.second__section--article1{
+/* .second__section--article1{
     width: 100px;
     padding-left: 80px;
 }
@@ -180,6 +180,21 @@ body{
 .second__section--article2{
     width: 100px;
     padding-left: 80px;
+} */
+
+.fb-responsive {
+    overflow: hidden;
+    padding-bottom: 100%;
+    position: relative;
+    height: 0;
+}
+
+.fb-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .third__section{
