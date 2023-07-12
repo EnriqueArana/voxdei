@@ -167,11 +167,23 @@ body{
     padding: 0;
     margin: 0;
     display: grid;
+    gap: 10px;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr;
     padding: 30px;
     padding-left: 100px;
 }
 
+
+.second__section--article3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.second__section--article3 img{
+    width: 100%;
+    padding: 0;
+}
+    
 /* .second__section--article1{
     width: 100px;
     padding-left: 80px;
@@ -657,14 +669,15 @@ video{
 
     .second__section{
         padding: 0;
+        width: 100%;
+        align-items: center;
+    }
+    .second__section--article3 img{
+        width: 80%;
+        height: 80%;
+        padding-left: 100px;   
     }
 
-    .second__section--article1{
-        padding-left: 25px;
-    }
-    .second__section--article2{
-        padding: 0;
-    }
 
     /*NOSOTROS*/
     .seccion__integrantes p{
@@ -718,7 +731,7 @@ video{
     }
 
     .second__section{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         width: 90%;
         padding-left: 35px;
     }
@@ -795,11 +808,19 @@ video{
 @media (max-width:775px){
     /* HOME */
     .second__section{
-        width: 65%;
-        padding-left: 185px;
+        width: 95%;
+        padding-left: 20px;
         align-items: center;
+        grid-template-columns: 1fr;
+        display: block;
     }
-
+    .second__section article{
+        height: 500px;
+    }
+    .second__section--article3{
+        height: 90%;
+        padding-top: 50px;
+    }
     .publication{
         width: 380px;
         justify-content: center;
@@ -810,15 +831,11 @@ video{
     }
 }
 
-@media (max-width:641px){
-    .second__section{
-        width: 35%;
-        padding-left: 65px;
-        align-items: center;
-    }
+@media (max-width:642px){
 
-    .second__section--article1{
-        height: 250px;
+    .second__section--article3 img{
+        width: 100%;
+        padding-left: 0;
     }
 
     .publication{
@@ -910,3 +927,32 @@ video{
         width: 70%;
     }
 }
+
+@media (max-width:500px){
+    .second__section{
+        padding-left: 10px;
+    }
+    .second__section--article2{
+        width: 90%;
+        height: 350px;
+    }
+}
+
+@media (max-width:340px){
+    /* HOME */
+    .second__section{
+        width: 95%;
+    }
+    .second__section article{
+        height: 320px;
+    }
+    .second__section--article2{
+        width: 100%;
+    }
+    .second__section--article3 img{
+        padding-left: 0;
+        margin-top: 20px;
+        width: 94%;
+    }
+}
+
